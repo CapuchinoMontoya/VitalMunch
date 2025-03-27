@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>VitalMunch</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Cargando...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                        <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>ejemplo@vitalmunch.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"></i></h1>
+                    <img src="img/logo-Vital.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="#" class="nav-item nav-link">Productos</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Nosotros</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item">Sobre Nosotros</a>
+                                <a href="#" class="dropdown-item">FAQs</a>
+                            </div>
+                        </div>
+                        <a class="nav-item nav-link">Contactanos</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Carousel Start -->
+            <div class="header-carousel owl-carousel">
+                <div class="header-carousel-item">
+                    <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Alimentos naturales para mascotas">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row gy-0 gx-5">
+                                <div class="col-lg-0 col-xl-5"></div>
+                                <div class="col-xl-7 animated fadeInLeft">
+                                    <div class="text-sm-center text-md-end">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Bienvenido a Vital Munch</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">Nutrición natural para una vida más saludable</h1>
+                                        <p class="mb-5 fs-5">Alimenta a tu mascota con lo mejor de la naturaleza. Sin conservadores, sin aditivos, solo ingredientes de calidad que cuidan su bienestar. 🐶🐱✨</p>
+                                        <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-paw me-2"></i> Ver Productos</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="https://wa.me/+528138970758?text=¡Hola!%20Me%20interesa%20saber%20más%20sobre%20tus%20productos.%20¿Me%20puedes%20dar%20más%20información?" 
+                                            target="_blank"><i class="fab fa-whatsapp me-2"></i> Contáctanos</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                            <h2 class="text-white me-2">Síguenos:</h2>
+                                            <div class="d-flex justify-content-end ms-2">
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href="https://www.instagram.com/vital_munch_/" target="_blank">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" 
+                                                href="https://wa.me/+528138970758?text=¡Hola!%20Me%20interesa%20saber%20más%20sobre%20tus%20productos.%20¿Me%20puedes%20dar%20más%20información?" 
+                                                target="_blank">
+                                                    <i class="fab fa-whatsapp"></i>
+                                                </a>                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div>
+                            <h4 class="text-primary">Sobre Nosotros</h4>
+                            <h1 class="display-5 mb-4">Nutrición natural para una vida más saludable</h1>
+                            <p class="mb-4">
+                                En <strong>VitalMunch</strong>, nos especializamos en ofrecer alimentos premium para mascotas, 
+                                utilizando tecnología avanzada de liofilización. Sin conservantes ni aditivos, solo ingredientes 
+                                naturales que cuidan la salud de tu mejor amigo. 🐶🐱✨
+                            </p>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div><i class="fas fa-leaf fa-3x text-primary"></i></div>
+                                        <div class="ms-4">
+                                            <h4>Ingredientes 100% Naturales</h4>
+                                            <p>Alimentos sin conservantes ni químicos, garantizando calidad y frescura.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div><i class="fas fa-paw fa-3x text-primary"></i></div>
+                                        <div class="ms-4">
+                                            <h4>Amor por las Mascotas</h4>
+                                            <p>Nos apasiona su bienestar, ofreciendo solo lo mejor para su nutrición.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex">
+                                        <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Contáctanos</h4>
+                                            <p class="mb-0 fs-5" style="letter-spacing: 1px;">+012 345 6789</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-primary rounded position-relative overflow-hidden">
+                            <img src="img/about-1-dog.jpeg" class="img-fluid rounded w-100" alt="Nutrición natural para mascotas">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Servicios de Liofilización -->
+        <div class="container-fluid service pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Liofilización</h4>
+                    <h1 class="display-5 mb-4">¿Qué es la Liofilización?</h1>
+                    <p class="mb-0">La liofilización es un proceso de deshidratación en el que los alimentos se congelan y luego se les extrae el agua mediante sublimación. Esto permite conservar mejor sus propiedades nutricionales y su sabor.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/alimento-1.jpeg" class="img-fluid rounded-top w-100" alt="Alimento Liofilizado">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Conservación de Nutrientes</a>
+                                <p class="mb-4">La liofilización mantiene hasta un 97% de los nutrientes originales de los alimentos, garantizando su valor nutricional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/alimento-2.jpeg" class="img-fluid rounded-top w-100" alt="Alimento Liofilizado">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Mayor Duración</a>
+                                <p class="mb-4">Los alimentos liofilizados pueden conservarse por años sin necesidad de refrigeración.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/alimento-3.jpeg" class="img-fluid rounded-top w-100" alt="Alimento Liofilizado">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Fácil de Transportar</a>
+                                <p class="mb-4">Al eliminar la humedad, los alimentos pesan menos y son fáciles de almacenar y transportar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/alimento-4.jpeg" class="img-fluid rounded-top w-100" alt="Alimento Liofilizado">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Sabor y Textura Conservados</a>
+                                <p class="mb-4">Este proceso mantiene la textura y el sabor de los alimentos casi intactos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/alimento-5.jpeg" class="img-fluid rounded-top w-100" alt="Alimento Liofilizado">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Rehidratación Rápida</a>
+                                <p class="mb-4">Solo necesitas agregar agua para recuperar la textura y sabor original.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Servicios de Liofilización End -->
+
+        <!-- Features Start -->
+        <div class="container-fluid feature pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Beneficios de la Liofilización</h4>
+                    <h1 class="display-5 mb-4">La mejor manera de conservar los alimentos sin perder su valor nutricional.</h1>
+                    <p class="mb-0">
+                        La liofilización es un proceso de deshidratación que mantiene intactas las propiedades nutricionales, 
+                        ofreciendo una conservación prolongada sin aditivos ni conservantes artificiales.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-seedling fa-4x text-primary"></i>
+                            </div>
+                            <h4>Conservación de Nutrientes</h4>
+                            <p class="mb-4">Mantiene hasta el 97% de los nutrientes originales, sin necesidad de conservantes.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Más información</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-hourglass-half fa-4x text-primary"></i>
+                            </div>
+                            <h4>Mayor Duración</h4>
+                            <p class="mb-4">Los alimentos liofilizados pueden durar hasta 25 años sin perder calidad.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Más información</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-box-open fa-4x text-primary"></i>
+                            </div>
+                            <h4>Fácil de Transportar</h4>
+                            <p class="mb-4">Son ligeros y compactos, ideales para senderismo, expediciones o emergencias.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Más información</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-utensils fa-4x text-primary"></i>
+                            </div>
+                            <h4>Sabor y Textura Originales</h4>
+                            <p class="mb-4">Al rehidratarse, los alimentos recuperan su sabor y textura como si fueran frescos.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+        <!-- Offer Start -->
+        <div class="container-fluid offer-section pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Nuestro Producto</h4>
+                    <h1 class="display-5 mb-4">Descubre los beneficios de nuestro proceso de liofilización</h1>
+                    <p class="mb-0">
+                        La liofilización permite conservar los alimentos sin perder su valor nutricional, 
+                        manteniendo su sabor, textura y calidad durante años.
+                    </p>
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="nav nav-pills bg-light rounded p-5">
+                            <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
+                                <h5 class="mb-0">Proceso de Liofilización</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
+                                <h5 class="mb-0">Conservación sin conservantes</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
+                                <h5 class="mb-0">Alimentos listos para consumir</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-0" data-bs-toggle="pill" href="#collapseFour">
+                                <h5 class="mb-0">Durabilidad y almacenamiento</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="tab-content">
+                            <div id="collapseOne" class="tab-pane fade show p-0 active">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <video class="w-100 rounded" controls muted>
+                                            <source src="img/alimento-1.mp4" type="video/mp4">
+                                            Tu navegador no soporta videos.
+                                        </video>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">¿Cómo funciona la liofilización?</h1>
+                                        <p class="mb-4">
+                                            Mediante este proceso, eliminamos el agua de los alimentos conservando su 
+                                            estructura y nutrientes intactos.
+                                        </p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/producto-1.jpeg" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Sin aditivos ni químicos</h1>
+                                        <p class="mb-4">
+                                            Nuestro proceso no requiere conservantes artificiales, asegurando un producto 
+                                            100% natural y saludable.
+                                        </p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <video class="w-100 rounded" controls muted>
+                                            <source src="img/alimento-2.mp4" type="video/mp4">
+                                            Tu navegador no soporta videos.
+                                        </video>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Rápido y fácil de preparar</h1>
+                                        <p class="mb-4">
+                                            Solo añade agua y en pocos minutos tus alimentos estarán listos para consumir, 
+                                            con todo su sabor y nutrientes.
+                                        </p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseFour" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/producto-2.jpeg" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Hasta 25 años de duración</h1>
+                                        <p class="mb-4">
+                                            Los alimentos liofilizados pueden almacenarse durante décadas sin perder calidad, 
+                                            ideales para emergencias o expediciones.
+                                        </p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Offer End -->
+
+        <!-- FAQs Start -->
+        <div class="container-fluid faq-section pb-5">
+            <div class="container pb-5 overflow-hidden">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">FAQs</h4>
+                    <h1 class="display-5 mb-4">Preguntas Frecuentes</h1>
+                    <p class="mb-0">
+                        Aquí encontrarás respuestas a las preguntas más comunes sobre nuestros productos, envíos y devoluciones.  
+                        Si tienes más dudas, contáctanos.
+                    </p>
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="accordion accordion-flush bg-light rounded p-5" id="accordionFlushSection">
+                            <div class="accordion-item rounded-top">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    ¿Cuánto tiempo tardan los envíos?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">
+                                        Los envíos nacionales tardan entre 2 y 5 días hábiles. Los envíos internacionales pueden tardar entre 7 y 15 días, dependiendo del destino.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    ¿Puedo devolver un producto si no estoy satisfecho?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">
+                                        Sí, ofrecemos devoluciones dentro de los primeros 30 días después de recibir el producto, siempre que esté en su estado original.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    ¿Cómo puedo rastrear mi pedido?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">
+                                        Una vez que enviemos tu pedido, recibirás un correo con el número de seguimiento y un enlace para rastrearlo en tiempo real.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item rounded-bottom">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    ¿Qué métodos de pago aceptan?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">
+                                        Aceptamos pagos con tarjeta de crédito/débito, PayPal y transferencias bancarias. También ofrecemos pago en efectivo en algunos puntos de venta.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-primary rounded">
+                            <img src="img/svg-faq.svg" class="img-fluid w-100" alt="Preguntas Frecuentes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQs End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">
+                                <h4 class="text-white">VitalMunch</h4>
+                            </a>
+                            <p class="mb-4">
+                                ¡Descubre el poder de la alimentación saludable! En VitalMunch, ofrecemos productos liofilizados que mantienen el sabor y los nutrientes, perfectos para tu estilo de vida activo y saludable. ¡Explora más sobre nuestros productos y únete a nuestra comunidad!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Support</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Plitica de privacidad</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terminos y condiciones</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Informacion de Contacto</h4>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">123 Mexico Ags</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">(+012) 3456 7890</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fab fa-firefox-browser text-primary me-3"></i>
+                                <p class="text-white mb-0">vitalmuch@gmail.com</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href="https://www.instagram.com/vital_munch_/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>VitalMunch</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        Designed By <a class="border-bottom text-white">Alan Capuchino</a> Distributed By <a class="border-bottom text-white">ADN7</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
