@@ -29,7 +29,13 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-
+    <style>
+        @media (max-width: 576px) {
+            .img-responsive-size {
+                width: 100% !important;
+            }
+        }
+    </style>
     <body>
 
         <!-- Spinner Start -->
@@ -318,31 +324,79 @@
         </div>
         <!-- Features End -->
 
-        <!-- Infografía 1 Start -->
-        <div class="container-fluid offer-section pb-5">
+         <!-- Celular Start (solo mobile) -->
+        <div class="container-fluid offer-section pb-5 d-lg-none">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Infografía 1</h4>
-                    <h1 class="display-5 mb-4">La dieta BARF</h1>
                 </div>
-                <div class="row g-4 align-items-center d-flex ">
-                    <!-- Imagen Mitad de Perro -->
-                    <div class="col-lg-6 col-md-12 d-flex justify-content-center wow fadeInLeft" data-wow-delay="0.2s">
-                        <img src="img/mitad-perro.png" class="img-fluid rounded w-80" alt="Mitad de perro">
-                    </div>
+                <div class="row g-4 align-items-center d-flex">
                     <!-- Texto -->
                     <div class="col-lg-6 col-md-12 d-flex align-items-center">
-                        <div class="p-4 text-center text-lg-start wow fadeInRight" data-wow-delay="0.2s">
-                            <h3>Beneficios de la dieta BARF</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel tortor id metus dictum dapibus. 
-                                Curabitur nec magna vitae augue tincidunt aliquet. Proin euismod risus nec velit laoreet, id suscipit elit vestibulum. 
-                                Suspendisse potenti.
-                            </p>
-                            <p>
-                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
-                                Ut vehicula eros ut risus tempus, nec vehicula metus gravida. Donec eget lorem a dolor rhoncus hendrerit.
-                            </p>
+                        <div class="p-4 text-center text-lg-end justify-content-center wow fadeInLeft" data-wow-delay="0.2s">
+                            <img src="img/logo-2.png" class="img-fluid rounded w-50 img-responsive-size" alt="Info-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Infografía 2 End -->
+
+        <!-- Infografía 1 en celular Start (solo mobile) -->
+        <div class="container-fluid offer-section pb-3 pb-lg-5 d-lg-none">
+            <div class="container pb-3 pb-lg-5">
+                <div class="text-center mx-auto pb-3 pb-lg-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h1 class="display-5 mb-3 mb-lg-4">La dieta BARF</h1>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <!-- Contenido Principal -->
+                    <div class="col-lg-6 order-lg-2 order-1 col-12">
+                        <div class="p-3 p-lg-4 text-center text-lg-start wow fadeInRight" data-wow-delay="0.2s">
+                            <!-- Imagen del plato BARF -->
+                            <div class="mb-3 mb-lg-4">
+                                <img src="img/dieta-barf-1.png" alt="Plato de dieta BARF" class="img-fluid rounded" style="max-width: 70%; height: auto;">
+                            </div>
+                            
+                            <p class="mb-3 mb-lg-4">BARF significa <strong>Biologically Appropriate Raw Food</strong> (Alimento Crudo Biológicamente Apropiado). Es una dieta natural que consiste en:</p>
+                            
+                            <!-- Lista de ingredientes -->
+                            <div class="row mb-3 mb-lg-4">
+                                <div class="col-md-6 mb-2 mb-md-0">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-paw text-primary me-2"></i> 10% Fruta</li>
+                                        <li class="mb-2"><i class="fas fa-paw text-primary me-2"></i> 20% Huesos cárnicos de pollo</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-paw text-primary me-2"></i> 50% Carne y vísceras de cerdo</li>
+                                        <li class="mb-2"><i class="fas fa-paw text-primary me-2"></i> 20% Verdura (papa, brócoli y zanahoria)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Sección Beneficios + Imagen -->
+                            <div class="row align-items-center mt-3 mt-lg-4">
+                                <!-- Beneficios -->
+                                <div class="col-lg-6 col-12 mb-3 mb-lg-0">
+                                    <div class="bg-light p-3 p-lg-4 rounded h-100">
+                                        <h5 class="text-primary mb-3">Beneficios de la dieta BARF</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Mejora la <strong>digestión</strong> y absorción de <strong>nutrientes</strong></li>
+                                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Piel y pelaje <strong>saludables</strong></li>
+                                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Control de peso, <strong>previene obesidad</strong></li>
+                                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Su sistema inmunológico se <strong>fortalece</strong></li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i> Más <strong>energía y vitalidad</strong> para tu mascota</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- Imagen Beneficios -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="text-center">
+                                        <img src="img/alimento-5.jpeg" class="img-fluid rounded shadow" alt="Perro saludable con dieta BARF" style="max-height: 360px; width: auto; max-width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -350,37 +404,116 @@
         </div>
         <!-- Infografía 1 End -->
 
-        <!-- Infografía 2 Start -->
-        <div class="container-fluid offer-section pb-5">
+        <!-- Infografía 2 en celular Start (solo mobile) -->
+        <div class="container-fluid offer-section pb-5 d-lg-none">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Infografía 2</h4>
-                    <h1 class="display-5 mb-4">La importancia de la alimentación natural</h1>
                 </div>
-                <div class="row g-4 align-items-center d-flex flex-column-reverse flex-lg-row" data-wow-delay="0.2s">
+                <div class="row g-4 align-items-center d-flex">
                     <!-- Texto -->
                     <div class="col-lg-6 col-md-12 d-flex align-items-center">
-                        <div class="p-4 text-center text-lg-start wow fadeInLeft" data-wow-delay="0.2s">
-                            <h3>Beneficios de una dieta natural</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus augue sed ligula consequat, 
-                                ac volutpat risus efficitur. Nullam euismod dolor ac dolor sagittis, ac ornare eros luctus.
-                            </p>
-                            <p>
-                                Morbi scelerisque nulla ut augue pharetra, id suscipit purus elementum. Sed a erat non 
-                                ligula fermentum varius. Etiam nec massa non lectus aliquet sodales in a turpis.
-                            </p>
+                        <div class="p-4 text-center text-lg-end justify-content-center wow fadeInLeft" data-wow-delay="0.2s">
+                            <img src="img/Info-1.png" class="img-fluid rounded w-50 img-responsive-size" alt="Info-1">
+                            <img src="img/Info-2.png" class="img-fluid rounded w-50 img-responsive-size" alt="Info-2">
                         </div>
-                    </div>
-                    <!-- Imagen Cara del Perro -->
-                    <div class="col-lg-6 col-md-12 d-flex justify-content-center wow fadeInRight" data-wow-delay="0.2s">
-                        <img src="img/mitad-gato.png" class="img-fluid rounded w-80" alt="Cara del perro">
                     </div>
                 </div>
             </div>
         </div>
         <!-- Infografía 2 End -->
 
+        <!-- Infografía 1 en pc Start (solo desktop) -->
+        <div class="container-fluid offer-section pb-3 pb-lg-5 d-none d-lg-block">
+            <div class="container pb-3 pb-lg-5">
+                <div class="text-center mx-auto pb-3 pb-lg-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Infografía 1</h4>
+                    <h1 class="display-5 mb-3 mb-lg-4">La dieta BARF</h1>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <!-- Imagen Mitad de Perro -->
+                    <div class="col-lg-6 order-lg-1 order-2 col-12 d-flex justify-content-center wow fadeInLeft" data-wow-delay="0.2s">
+                        <img src="img/mitad-perro.png" class="img-fluid rounded w-80 w-lg-80" alt="Mitad de perro">
+                    </div>
+                    
+                    <!-- Contenido Principal -->
+                    <div class="col-lg-6 order-lg-2 order-1 col-12">
+                        <div class="p-3 p-lg-4 text-center text-lg-start wow fadeInRight" data-wow-delay="0.2s">
+                            <!-- Imagen del plato BARF -->
+                            <div class="mb-3 mb-lg-4">
+                                <img src="img/dieta-barf-1.png" alt="Plato de dieta BARF" class="img-fluid rounded" style="max-width: 70%; height: auto;">
+                            </div>
+                            
+                            <p class="mb-3 mb-lg-4">BARF significa <strong>Biologically Appropriate Raw Food</strong> (Alimento Crudo Biológicamente Apropiado). Es una dieta natural que consiste en:</p>
+                            
+                            <!-- Lista de ingredientes -->
+                            <div class="row mb-3 mb-lg-4">
+                                <div class="col-md-6 mb-2 mb-md-0">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-paw text-primary me-2"></i> 10% Fruta</li>
+                                        <li class="mb-2"><i class="fas fa-paw text-primary me-2"></i> 20% Huesos cárnicos de pollo</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-paw text-primary me-2"></i> 50% Carne y vísceras de cerdo</li>
+                                        <li class="mb-2"><i class="fas fa-paw text-primary me-2"></i> 20% Verdura (papa, brócoli y zanahoria)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Sección Beneficios + Imagen -->
+                            <div class="row align-items-center mt-3 mt-lg-4">
+                                <!-- Beneficios -->
+                                <div class="col-lg-6 col-12 mb-3 mb-lg-0">
+                                    <div class="bg-light p-3 p-lg-4 rounded h-100">
+                                        <h5 class="text-primary mb-3">Beneficios de la dieta BARF</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Mejora la <strong>digestión</strong> y absorción de <strong>nutrientes</strong></li>
+                                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Piel y pelaje <strong>saludables</strong></li>
+                                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Control de peso, <strong>previene obesidad</strong></li>
+                                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Su sistema inmunológico se <strong>fortalece</strong></li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i> Más <strong>energía y vitalidad</strong> para tu mascota</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- Imagen Beneficios -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="text-center">
+                                        <img src="img/alimento-5.jpeg" class="img-fluid rounded shadow" alt="Perro saludable con dieta BARF" style="max-height: 360px; width: auto; max-width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Infografía 1 End -->
+
+        <!-- Infografía 2 en pc Start (solo desktop) -->
+        <div class="container-fluid offer-section pb-5 d-none d-lg-block">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Infografía 1</h4>
+                    <h1 class="display-5 mb-4">La dieta BARF</h1>
+                </div>
+                <div class="row g-4 align-items-center d-flex">
+                    <!-- Texto -->
+                    <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                        <div class="p-4 text-center text-lg-end justify-content-center wow fadeInLeft" data-wow-delay="0.2s">
+                            <img src="img/Info-1.png" class="img-fluid rounded w-50 img-responsive-size" alt="Info-1">
+                            <img src="img/Info-2.png" class="img-fluid rounded w-50 img-responsive-size" alt="Info-2">
+                        </div>
+                    </div>
+                    <!-- Imagen Mitad de Perro -->
+                    <div class="col-lg-6 col-md-12 d-flex text-end justify-content-center wow fadeInRight" data-wow-delay="0.2s">
+                        <img src="img/mitad-gato.png" class="img-fluid rounded w-80" alt="Mitad de gato">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Infografía 2 End -->
 
         <!-- Offer Start -->
         <div class="container-fluid offer-section pb-5">
@@ -400,7 +533,7 @@
                                 <h5 class="mb-0">Proceso de Liofilización</h5>
                             </a>
                             <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
-                                <h5 class="mb-0">Conservación sin conservantes</h5>
+                                <h5 class="mb-0">Sin conservantes</h5>
                             </a>
                             <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
                                 <h5 class="mb-0">Alimentos listos para consumir</h5>
