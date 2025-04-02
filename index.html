@@ -72,7 +72,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                        <a href="#" class="nav-item nav-link">Productos</a>
+                        <a href="products.html" class="nav-item nav-link">Productos</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link" data-bs-toggle="dropdown">
                                 <span class="dropdown-toggle">Nosotros</span>
@@ -83,10 +83,42 @@
                             </div>
                         </div>
                         <a class="nav-item nav-link">Contactanos</a>
+                        <div class="nav-item ms-lg-3">
+                            <a class="nav-link position-relative text-dark" id="cart-icon" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                <i class="fas fa-shopping-cart fa-lg"></i>
+                                <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" id="nav-cart-count">0</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
-
+            <!-- Modal del Carrito -->
+            <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title">
+                                <i class="fas fa-shopping-cart me-2"></i>Tu Pedido
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group mb-3" id="cart-items">
+                                <li class="list-group-item text-center text-muted">Tu carrito está vacío</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5>Total: <span id="cart-total">$0.00</span></h5>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+                            <button type="button" class="btn btn-success" id="checkout-btn">
+                                <i class="fab fa-whatsapp me-2"></i>Completar Pedido
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Carousel Start -->
             <div class="header-carousel owl-carousel">
                 <div class="header-carousel-item">
@@ -102,7 +134,7 @@
                                         <p class="mb-5 fs-5">En <strong>VITAL MUNCH</strong> sabemos cuánto los amas, así como nosotros amamos <strong>NUTRIRLOS</strong>. 
                                             Sin conservadores y con ingredientes de calidad 100% naturales. 🐶🐱✨</p>
                                         <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
-                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-paw me-2"></i> Ver Productos</a>
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="products.html"><i class="fas fa-paw me-2"></i> Ver Productos</a>
                                             <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="https://wa.me/+528138970758?text=¡Hola!%20Me%20interesa%20saber%20más%20sobre%20tus%20productos.%20¿Me%20puedes%20dar%20más%20información?" 
                                             target="_blank"><i class="fab fa-whatsapp me-2"></i> Contáctanos</a>
                                         </div>
@@ -778,6 +810,7 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script src="js/cart.js"></script>
     </body>
 
 </html>

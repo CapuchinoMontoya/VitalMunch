@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>VitalMunch</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+        @media (max-width: 576px) {
+            .img-responsive-size {
+                width: 100% !important;
+            }
+        }
+    </style>
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Cargando...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                        <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>ejemplo@vitalmunch.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar con Carrito -->
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" style="background-color: #f8f9fa; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary"></i></h1>
+                <img src="img/logo-Vital.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link text-dark">Inicio</a>
+                    <a href="products.html" class="nav-item nav-link active">Productos</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                            <span class="dropdown-toggle text-dark">Nosotros</span>
+                        </a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#" class="dropdown-item">Sobre Nosotros</a>
+                            <a href="#" class="dropdown-item">FAQs</a>
+                        </div>
+                    </div>
+                    <a class="nav-item nav-link text-dark">Contactanos</a>
+                    
+                    <!-- Icono del Carrito con contador -->
+                    <div class="nav-item ms-lg-3">
+                        <a class="nav-link position-relative text-dark" id="cart-icon" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" id="nav-cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal del Carrito -->
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title">
+                            <i class="fas fa-shopping-cart me-2"></i>Tu Pedido
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group mb-3" id="cart-items">
+                            <li class="list-group-item text-center text-muted">Tu carrito está vacío</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5>Total: <span id="cart-total">$0.00</span></h5>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+                        <button type="button" class="btn btn-success" id="checkout-btn">
+                            <i class="fab fa-whatsapp me-2"></i>Completar Pedido
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- Products Start -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros Productos</h2>
+                
+                <!-- Contenedor de Productos -->
+                <div class="row" id="productos-container">
+                    <!-- Las cards se generarán dinámicamente con JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">
+                                <h4 class="text-white">VitalMunch</h4>
+                            </a>
+                            <p class="mb-4">
+                                ¡Descubre el poder de la alimentación saludable! En VitalMunch, ofrecemos productos liofilizados que mantienen el sabor y los nutrientes, perfectos para tu estilo de vida activo y saludable. ¡Explora más sobre nuestros productos y únete a nuestra comunidad!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Support</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Plitica de privacidad</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terminos y condiciones</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Informacion de Contacto</h4>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">123 Mexico Ags</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">(+012) 3456 7890</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fab fa-firefox-browser text-primary me-3"></i>
+                                <p class="text-white mb-0">vitalmuch@gmail.com</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href="https://www.instagram.com/vital_munch_/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>VitalMunch</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        Designed By <a class="border-bottom text-white">Alan Capuchino</a> Distributed By <a class="border-bottom text-white">ADN7</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cart.js"></script>
+        <script>
+        // Funciones específicas de products.html
+        function renderProductos() {
+            const container = document.getElementById('productos-container');
+            if (!container) return;
+            
+            container.innerHTML = '';
+            
+            productos.forEach(producto => {
+                const card = `
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+                        <div class="card-body">
+                            <h5 class="card-title">${producto.nombre}</h5>
+                            <p class="card-text text-muted">${producto.descripcion}</p>
+                            <h6 class="text-primary">$${producto.precio.toFixed(2)}</h6>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100 add-to-cart" data-id="${producto.id}">
+                                <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>`;
+                container.innerHTML += card;
+            });
+        }
+
+        // Configuración de eventos específicos de products.html
+        function setupProductsEventListeners() {
+            // Añadir al carrito
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('add-to-cart') || e.target.closest('.add-to-cart')) {
+                    const btn = e.target.classList.contains('add-to-cart') ? e.target : e.target.closest('.add-to-cart');
+                    const id = parseInt(btn.dataset.id);
+                    
+                    const index = carrito.findIndex(item => item.id === id);
+                    if (index >= 0) {
+                        carrito[index].cantidad += 1;
+                    } else {
+                        carrito.push({ id, cantidad: 1 });
+                    }
+                    
+                    renderCarrito();
+                    
+                    // Feedback visual
+                    const originalText = btn.innerHTML;
+                    btn.innerHTML = '<i class="fas fa-check me-2"></i>Añadido';
+                    btn.classList.remove('btn-primary');
+                    btn.classList.add('btn-success');
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.classList.remove('btn-success');
+                        btn.classList.add('btn-primary');
+                    }, 1000);
+                }
+            });
+        }
+
+        // Inicialización específica de products.html
+        document.addEventListener('DOMContentLoaded', function() {
+            renderProductos();
+            setupProductsEventListeners();
+        });
+        </script>
+    </body>
+</html>
