@@ -35,6 +35,17 @@
                 width: 100% !important;
             }
         }
+        .card .carousel-inner img,
+        .card .carousel-inner video {
+            width: 100%;
+            height: 500px; /* o el alto que uses para tus imágenes */
+            object-fit: cover;
+            display: block;
+        }
+
+        .card .carousel-inner {
+            height: 500px; /* mismo valor que arriba para fijar la altura del carrusel */
+        }
     </style>
     <body>
 
@@ -225,14 +236,47 @@
         function renderProductos() {
             const container = document.getElementById('productos-container');
             if (!container) return;
-            
+
             container.innerHTML = '';
-            
+
             productos.forEach(producto => {
+                const carouselId = `carouselProducto${producto.id}`;
+
+                const imagenesHtml = producto.imagenes.map((media, index) => {
+                    if (media.tipo === "img") {
+                        return `
+                        <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                            <img src="${media.src}" class="d-block w-100" alt="${producto.nombre}">
+                        </div>`;
+                    } else if (media.tipo === "video") {
+                        return `
+                        <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                            <video class="d-block w-100" controls>
+                                <source src="${media.src}" type="video/mp4">
+                                Tu navegador no soporta video HTML5.
+                            </video>
+                        </div>`;
+                    }
+                    return '';
+                }).join('');
+
                 const card = `
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+                        <div id="${carouselId}" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                ${imagenesHtml}
+                            </div>
+                            ${producto.imagenes.length > 1 ? `
+                            <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>` : ''}
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">${producto.nombre}</h5>
                             <p class="card-text text-muted">${producto.descripcion}</p>
@@ -245,6 +289,7 @@
                         </div>
                     </div>
                 </div>`;
+
                 container.innerHTML += card;
             });
         }

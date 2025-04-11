@@ -2,19 +2,61 @@
 const productos = [
     { 
         id: 1, 
-        nombre: "Producto para perro", 
-        precio: 1, 
-        imagen: "img/producto-1.jpeg",
-        descripcion: "Pollo crudo de alta calidad para dieta BARF"
+        nombre: "PREMIOS liofilizados PROTEÍNA de CERDO.", 
+        precio: 119, 
+        imagenes: [
+            { tipo: "img", src: "img/producto-1.jpeg" },
+            { tipo: "img", src: "img/producto-cerdo-2.jpeg" },
+            { tipo: "img", src: "img/producto-cerdo-3.jpeg" },
+            { tipo: "img", src: "img/producto-cerdo-4.jpeg" },
+            { tipo: "video", src: "img/producto-cerdo-5.mp4" },
+            { tipo: "video", src: "img/producto-cerdo-6.mp4" }
+        ],
+        descripcion: "Apto para perros y gatos<br>Contenido: 80 gr liofilizados<br>Sabor: Hígado de Cerdo<br>Uso: Premios o snack, como complemento alimenticio."
     },
     { 
         id: 2, 
-        nombre: "Combo Inicial BARF", 
-        precio: 1, 
-        imagen: "img/producto-2.jpeg",
-        descripcion: "Todo lo necesario para comenzar con BARF"
+        nombre: "PREMIOS liofilizados PROTEÍNA de POLLO", 
+        precio: 119, 
+        imagenes: [
+            { tipo: "img", src: "img/producto-pollo-1.jpeg" },
+            { tipo: "img", src: "img/producto-pollo-2.jpeg" },
+            { tipo: "img", src: "img/producto-pollo-3.jpeg" },
+            { tipo: "img", src: "img/producto-pollo-4.jpeg" },
+            { tipo: "img", src: "img/producto-pollo-5.jpeg" },
+            { tipo: "video", src: "img/producto-pollo-6.mp4" }
+        ],
+        descripcion: "Apto para perros y gatos<br>Contenido: 80 gr liofilizados<br>Sabor: Hígado y corazon de Pollo<br>Uso: Premios o snack, como complemento alimenticio."
+    },
+    { 
+        id: 3, 
+        nombre: "6 pack PREMIOS liofilizados PROTEÍNA", 
+        precio: 642.60, 
+        imagenes: [
+            { tipo: "img", src: "img/producto-6pck-1.jpeg" },
+            { tipo: "img", src: "img/producto-6pck-2.jpeg" },
+            { tipo: "img", src: "img/producto-6pck-3.jpeg" },
+            { tipo: "img", src: "img/producto-6pck-4.jpeg" },
+            { tipo: "video", src: "img/producto-6pck-5.mp4" }
+        ],
+        descripcion: "Apto para perros y gatos<br>Contenido: 960 gr liofilizados (6 bolsas con 80 gr liofilizados cada una)<br>Sabor: Cerdo y Pollo<br>Uso: Premios o snack, como complemento alimenticio.<br>Precio 6 pack $714-15%"
+    },
+    { 
+        id: 4, 
+        nombre: "12 pack PREMIOS liofilizados PROTEÍNA", 
+        precio: 1213, 
+        imagenes: [
+            { tipo: "img", src: "img/producto-12pck-1.jpeg" },
+            { tipo: "img", src: "img/producto-12pck-2.jpeg" },
+            { tipo: "img", src: "img/producto-12pck-3.jpeg" },
+            { tipo: "img", src: "img/producto-12pck-4.jpeg" },
+            { tipo: "img", src: "img/producto-12pck-5.jpeg" },
+            { tipo: "video", src: "img/producto-12pck-6.mp4" }
+        ],
+        descripcion: "Apto para perros y gatos<br>Contenido: 960 gr liofilizados (12 bolsas con 80 gr liofilizados cada una)<br>Sabor: Cerdo y Pollo<br>Uso: Premios o snack, como complemento alimenticio.<br>Precio 12 pack $1428-15%"
     }
 ];
+
 
 // Carrito (usa localStorage para persistencia)
 let carrito = JSON.parse(localStorage.getItem('vitalmunch_carrito')) || [];
