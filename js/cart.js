@@ -151,7 +151,7 @@ function setupCommonEventListeners() {
                 return;
             }
             
-            const phone = "528138970758";
+            const phone = "525588970254";
             const message = generateWhatsAppMessage();
             window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
         });
