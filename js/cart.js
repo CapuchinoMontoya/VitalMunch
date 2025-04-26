@@ -3,7 +3,7 @@ const productos = [
     { 
         id: 1, 
         nombre: "PREMIOS liofilizados PROTEÍNA de CERDO.", 
-        precio: 119, 
+        precio: 149, 
         imagenes: [
             { tipo: "img", src: "img/producto-1.jpeg" },
             { tipo: "img", src: "img/producto-cerdo-2.jpeg" },
@@ -17,7 +17,7 @@ const productos = [
     { 
         id: 2, 
         nombre: "PREMIOS liofilizados PROTEÍNA de POLLO", 
-        precio: 119, 
+        precio: 149, 
         imagenes: [
             { tipo: "img", src: "img/producto-pollo-1.jpeg" },
             { tipo: "img", src: "img/producto-pollo-2.jpeg" },
@@ -31,7 +31,7 @@ const productos = [
     { 
         id: 3, 
         nombre: "6 pack PREMIOS liofilizados PROTEÍNA", 
-        precio: 642.60, 
+        precio: 804.6, 
         imagenes: [
             { tipo: "img", src: "img/producto-6pck-1.jpeg" },
             { tipo: "img", src: "img/producto-6pck-2.jpeg" },
@@ -39,12 +39,12 @@ const productos = [
             { tipo: "img", src: "img/producto-6pck-4.jpeg" },
             { tipo: "video", src: "img/producto-6pck-5.mp4" }
         ],
-        descripcion: "Apto para perros y gatos<br>Contenido: 960 gr liofilizados (6 bolsas con 80 gr liofilizados cada una)<br>Sabor: Cerdo y Pollo<br>Uso: Premios o snack, como complemento alimenticio.<br>Precio 6 pack $714-15%"
+        descripcion: "Apto para perros y gatos<br>Contenido: 960 gr liofilizados (6 bolsas con 80 gr liofilizados cada una)<br>Sabor: Cerdo y Pollo<br>Uso: Premios o snack, como complemento alimenticio.<br>Precio 6 pack $894-10%"
     },
     { 
         id: 4, 
         nombre: "12 pack PREMIOS liofilizados PROTEÍNA", 
-        precio: 1213, 
+        precio: 1519.8, 
         imagenes: [
             { tipo: "img", src: "img/producto-12pck-1.jpeg" },
             { tipo: "img", src: "img/producto-12pck-2.jpeg" },
@@ -53,7 +53,7 @@ const productos = [
             { tipo: "img", src: "img/producto-12pck-5.jpeg" },
             { tipo: "video", src: "img/producto-12pck-6.mp4" }
         ],
-        descripcion: "Apto para perros y gatos<br>Contenido: 960 gr liofilizados (12 bolsas con 80 gr liofilizados cada una)<br>Sabor: Cerdo y Pollo<br>Uso: Premios o snack, como complemento alimenticio.<br>Precio 12 pack $1428-15%"
+        descripcion: "Apto para perros y gatos<br>Contenido: 960 gr liofilizados (12 bolsas con 80 gr liofilizados cada una)<br>Sabor: Cerdo y Pollo<br>Uso: Premios o snack, como complemento alimenticio.<br>Precio 12 pack $1788-15%"
     }
 ];
 
